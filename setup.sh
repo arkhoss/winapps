@@ -1036,6 +1036,12 @@ function waCheckRDPAccess() {
     # Note: The following final line is expected within the log, indicating successful execution of the 'tsdiscon' command and termination of the RDP session.
     # [INFO][com.freerdp.core] - [rdp_print_errinfo]: ERRINFO_LOGOFF_BY_USER (0x0000000C):The disconnection was initiated by the user logging off their session on the server.
     # shellcheck disable=SC2140,SC2027 # Disable warnings regarding unquoted strings.
+    #
+    
+    echo "domain: $RDP_DOMAIN"
+    echo "user: $RDP_USER"
+    echo "pass: $RDP_PASS"
+
     $FREERDP_COMMAND \
         /cert:tofu \
         /d:"$RDP_DOMAIN" \
