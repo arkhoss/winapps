@@ -917,7 +917,7 @@ function waCheckContainerRunning() {
     local COMPOSE_COMMAND=""
 
     # Determine the state of the container.
-    CONTAINER_STATE=$("$WAFLAVOR" ps --all --filter name="WinApps" --format '{{.Status}}')
+    CONTAINER_STATE=$("$WAFLAVOR" ps --all --filter name="windows" --format '{{.Status}}')
     CONTAINER_STATE=${CONTAINER_STATE,,} # Convert the string to lowercase.
     CONTAINER_STATE=${CONTAINER_STATE%% *} # Extract the first word.
 
