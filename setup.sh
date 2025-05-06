@@ -1041,6 +1041,7 @@ function waCheckRDPAccess() {
     echo "domain: $RDP_DOMAIN"
     echo "user: $RDP_USER"
     echo "pass: $RDP_PASS"
+    RDP_IP="0.0.0.0"
     echo "IP: $RDP_IP"
 
     $FREERDP_COMMAND \
