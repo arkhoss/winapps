@@ -1041,6 +1041,7 @@ function waCheckRDPAccess() {
     echo "domain: $RDP_DOMAIN"
     echo "user: $RDP_USER"
     echo "pass: $RDP_PASS"
+    echo "IP: $RDP_IP"
 
     $FREERDP_COMMAND \
         /cert:tofu \
