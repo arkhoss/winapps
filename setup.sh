@@ -1044,7 +1044,7 @@ function waCheckRDPAccess() {
     RDP_IP="0.0.0.0"
     echo "IP: $RDP_IP"
 
-    $FREERDP_COMMAND \
+    xfreerdp \
         /cert:tofu \
         /d:"$RDP_DOMAIN" \
         /u:"$RDP_USER" \
